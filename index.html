@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+  <script>
+      $(document).ready(() => {
+          $(".cap1").click(() => {
+            var data = $(this).html();
+            console.log(data);
+            
+            
+          });
+      });
+  </script>
+  <style>
+      #menu{
+        max-width: 200px;
+      }
+      .cap1{
+        background: red;
+        color: yellow;
+        font-weight: bold;
+        padding: 5px;
+      }
+      .con a:link, .con a:visited {
+          display: block;
+      }
+      .con1 a:link, .con1 a:visited {
+          display: block;
+      }
+  </style>
+</head>
+<body>
+    <div id="menu">
+        <div class="cap1">Khóa Học</div>
+        <div class="con1">
+            <a href="#">IOS</a>
+            <a href="#">Android</a>
+            <a href="#">PhP</a>
+        </div>
+        <div class="cap1">Khóa Học</div>
+        <div class="con">
+            <a href="#">IOS</a>
+            <a href="#">Android</a>
+            <a href="#">PhP</a>
+        </div>
+        <div class="cap1">Khóa Học</div>
+        <div class="con">
+            <a href="#">IOS</a>
+            <a href="#">Android</a>
+            <a href="#">PhP</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
